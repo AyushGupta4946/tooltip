@@ -1,0 +1,46 @@
+/* Tooltip.css */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip {
+    position: absolute;
+    display: none;
+    background-color: #333;
+    color: cyan;
+    width: 150px;
+    padding: 5px 20px;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .tooltip.visible {
+    display: block;
+  }
+  
+  .tooltip-top {
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .tooltip-bottom {
+    bottom: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .tooltip-right {
+    top: 50%;
+    left: calc(100% + 10px);
+    transform: translateY(-50%);
+  }
+  
+  .tooltip-left {
+    top: 50%;
+    right: calc(100% + 10px);
+    transform: translateY(-50%);
+  }
+  
